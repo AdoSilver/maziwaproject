@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#212121">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/normal_slider"
+        android:visibility="visible">
+        
+        <ImageView
+            android:id="@+id/slider_welcome_image"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:adjustViewBounds="true"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/slider_pitch_text_margin_bottom">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold"
+                android:textSize="@dimen/slider_pitch_header_text_size"
+                android:textColor="@color/colorLastMileOrange"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/sliderCategoryTextView" />
+
+            <TextView
+                android:layout_width="@dimen/slider_pitch_details_width"
+                android:layout_height="wrap_content"
+                android:id="@+id/sliderDescriptionTextView"
+                android:text="Order fast"
+                android:textAlignment="center"
+                android:fontFamily="sans-serif"
+                android:textStyle="normal"
+                android:textSize="@dimen/slider_pitch_details_text_size"
+                android:textColor="#eeeeee"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/sliderCategoryTextView"
+                android:paddingTop="3dp"/>
+        </RelativeLayout>
+
+        
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/slider_pitch_button_height"
+            android:background="@color/colorPrimaryDark"
+            android:layout_alignParentBottom="true"
+            android:text="Continue"
+            android:textColor="@color/colorWhite"
+            android:textAllCaps="false"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:textSize="@dimen/slider_pitch_details_text_size"
+            android:id="@+id/slider_continue_btn"
+            android:visibility="invisible"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/slider_pitch_button_height"
+            android:background="@color/colorPrimaryDark"
+            android:layout_alignParentBottom="true"
+            android:text="Skip"
+            android:textColor="@color/colorWhite"
+            android:textAllCaps="false"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:textSize="@dimen/slider_pitch_details_text_size"
+            android:id="@+id/slider_skip_btn"
+            android:visibility="visible"/>
+    </RelativeLayout>
+
+    
+</FrameLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/pitch_slider_activity_layout"
+    tools:context="com.lastmilesale.android.mobileapps.lastmile.Activities.GetStarted.PitchSliderActivity">
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/slider_view_pager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true" />
+
+
+    <me.relex.circleindicator.CircleIndicator
+        android:id="@+id/slider_circle_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/slider_circle_height"
+        android:layout_alignBottom="@id/slider_view_pager"
+        android:layout_marginBottom="@dimen/slider_circle_margin_bottom"/>
+
+
+</RelativeLayout>

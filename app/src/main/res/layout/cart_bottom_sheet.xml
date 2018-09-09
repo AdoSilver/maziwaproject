@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:id="@+id/main_timed_bottom_sheet_layout"
+    android:clipToPadding="true"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/ep_textBox_MarginLeft">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confirm Checkout"
+            android:id="@+id/product_name"
+            android:textColor="#444444"
+            android:textSize="@dimen/confirm_checkout_font_size"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/ep_changePicture_marginLeft"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order Details"
+            android:layout_below="@id/product_name"
+            android:id="@+id/order_details"
+            android:textColor="#aaaaaa"
+            android:layout_marginTop="@dimen/ep_textBox_paddingLeft"
+            android:fontFamily="sans-serif"
+            android:textSize="@dimen/confirm_checkout_details_font_size"
+            android:layout_centerHorizontal="true"
+            android:textStyle="normal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="quntity details"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/ep_textBox_paddingLeft"
+            android:fontFamily="sans-serif"
+            android:textSize="@dimen/confirm_checkout_details_font_size"
+            android:textColor="#aaaaaa"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/order_details"
+            android:id="@+id/order_price"
+            android:visibility="visible"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price"
+            android:id="@+id/product_price"
+            android:layout_below="@id/order_price"
+            android:textColor="#444444"
+            android:textSize="@dimen/general_tab_text_size"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/ep_textBox_MarginLeft"/>
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/product_name"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/cart_progress_bar"
+            android:visibility="invisible"/>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/add_to_cart_btn_height"
+            android:textColor="#ffffff"
+            android:text="Confirm"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            android:id="@+id/checkout_btn"
+            android:textAllCaps="false"
+            android:textSize="@dimen/signup_textEdit_textSize"
+            android:background="@color/colorLastMileRed"/>
+    </RelativeLayout>
+
+
+
+</LinearLayout>

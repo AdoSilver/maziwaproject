@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Last Mile</string>
+    <string name="app_file">lastmile_app_file</string>
+    <string name="active_user_id">active_user_id</string>
+    <string name="user_phone_no">user_phone_no</string>
+    <string name="player_id">one_signal_payer_id</string>
+
+    <string name="user_fullname">user_full_name</string>
+    <string name="user_shop_name">user_shop_name</string>
+    <string name="user_cart_count">user_cart_count</string>
+
+    //Errors
+    <string name="timeout_error">Connection timeout, try again later.</string>
+    <string name="authentication_error">Authentication failure, try again later.</string>
+    <string name="network_error">Network error, try again later.</string>
+    <string name="serverbusy_error">Server busy, try again later.</string>
+    <string name="parse_error">Data error, try again later.</string>
+    <string name="internet_error">Error, check your Internet connection.</string>
+
+    //MainActivity
+    <string name="main_open">Open</string>
+    <string name="main_close">Close</string>
+    <string name="no_suppliers">No active suppliers. <u>Refresh</u></string>
+    <string name="no_products">Supplier has no products at the moment. <u>Refresh</u></string>
+    <string name="no_carts">You have no products on your cart. <u>Refresh</u></string>
+    <string name="no_notifications">You have no notifications. <u>Refresh</u></string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

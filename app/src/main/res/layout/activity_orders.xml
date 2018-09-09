@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/orders_activity_layout"
+    android:background="#f3f6fb"
+    tools:context="com.lastmilesale.android.mobileapps.lastmile.Activities.Main.OrdersActivity">
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/orders_fab"
+        android:layout_width="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_height="1dp"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="0.01dp"/>
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        android:background="#f3f6fb"
+        android:id="@+id/orders_appBarLayout"
+        android:stateListAnimator="@null">
+        <include
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:theme="@style/AppTheme.AppBarOverlay"
+            layout="@layout/orders_toolbar"/>
+    </android.support.design.widget.AppBarLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/orders_appBarLayout"
+        android:layout_marginTop="5dp"
+        android:paddingTop="5dp"
+        android:background="#f3f6fb"
+        android:id="@+id/orders_layout">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your orders"
+            android:fontFamily="sans-serif"
+            android:textColor="#444444"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:textSize="15sp"
+            android:id="@+id/cart_label"/>
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/cart_label"
+            android:layout_marginTop="5dp"
+            android:id="@+id/orders_recycler_view">
+        </android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "180275780390",
+    "firebase_url": "https://lastmile-aa8c1.firebaseio.com",
+    "project_id": "lastmile-aa8c1",
+    "storage_bucket": "lastmile-aa8c1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:180275780390:android:651b97d6e169a043",
+        "android_client_info": {
+          "package_name": "com.lastmilesale.android.mobileapps.lastmile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "180275780390-01lgm437s3b908reatnfnjga5n9odcmr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDR0hKYvLeAP-LddsoePH8EsAGzf1h2JbU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    //SplashScreen Dimensions
+    <dimen name="splash_logo_size">200dp</dimen>
+    <dimen name="splash_logo_marginTop">320dp</dimen>
+    <dimen name="splash_copyrights_text_size">15sp</dimen>
+    //Slider dimensions
+    <dimen name="slider_circle_margin_bottom">100dp</dimen>
+    <dimen name="slider_circle_height">96dp</dimen>
+    <dimen name="slider_pitch_text_margin_bottom">200dp</dimen>
+    <dimen name="slider_pitch_header_text_size">27sp</dimen>
+    <dimen name="slider_pitch_details_width">600dp</dimen>
+    <dimen name="slider_pitch_details_text_size">20sp</dimen>
+    <dimen name="slider_pitch_button_height">90dp</dimen>
+
+    //Authentication screen
+    <dimen name="signup_logo_marginTop">200dp</dimen>
+    <dimen name="signin_logo_marginTop">140dp</dimen>
+    <dimen name="signup_logo_smaller_marginTop">60dp</dimen>
+    <dimen name="signup_logo_size">35sp</dimen>
+    <dimen name="signup_motto_textSize">18sp</dimen>
+    <dimen name="signup_usernameEdit_Width">620dp</dimen>
+    <dimen name="signup_label_textsize">15sp</dimen>
+    <dimen name="signup_firstlabel_marginTop">60dp</dimen>
+    <dimen name="signup_usernameEdit_Height">60dp</dimen>
+    <dimen name="signup_label_marginTop">20dp</dimen>
+    <dimen name="signup_signup_button_height">60dp</dimen>
+    <dimen name="signup_signup_button_width">580dp</dimen>
+    <dimen name="signup_signup_marginTop">40dp</dimen>
+    <dimen name="signup_textEdit_textSize">16sp</dimen>
+    <dimen name="signup_featured_buttons_padding">14dp</dimen>
+    <dimen name="signup_featured_button_width">304dp</dimen>
+    <dimen name="signup_signin_altenative_marginBottom">20dp</dimen>
+
+    <dimen name="sign_in_motto_width">560dp</dimen>
+    <dimen name="signin_textEdit_margintop">40dp</dimen>
+    <dimen name="signin_btn_Width">610dp</dimen>
+    <dimen name="signin_btn_Height">60dp</dimen>
+    <dimen name="signin_featuredLogins_margintop">60dp</dimen>
+
+    //navigation drawer
+    <dimen name="nav_header_padding_left">20dp</dimen>
+    <dimen name="nav_header_padding_right">40dp</dimen>
+    <dimen name="nav_header_height">320dp</dimen>
+    <dimen name="nav_header_margins">10dp</dimen>
+    <dimen name="nav_header_username_textsize">16sp</dimen>
+    <dimen name="nav_header_fullname_textsize">17sp</dimen>
+    <dimen name="nav_logout_button_height">90dp</dimen>
+    <dimen name="ep_profile_pic_size">160dp</dimen>
+    <dimen name="nav_width">500dp</dimen>
+
+    //notification badge dimensions
+    <dimen name="n_badge_size">40dp</dimen>
+    <dimen name="n_badge_marginLeft">-20dp</dimen>
+    <dimen name="n_badge_marginTop">0dp</dimen>
+    <dimen name="n_badge_textSize">20sp</dimen>
+
+
+    //EDIT PROFILE DIMENSIONS
+    <dimen name="ep_profilePicture_wrapper_height">200dp</dimen>
+    <dimen name="ep_profilePicture_wrapper_marginTop">40dp</dimen>
+    <dimen name="ep_profilePicture_wrapper_topBorder">40dp</dimen>
+    <dimen name="ep_profilePicture_wrapper_bottomBorder">240dp</dimen>
+    <dimen name="ep_profilePicture_Size">160dp</dimen>
+    <dimen name="ep_profilePicture_marginTop">60dp</dimen>
+    <dimen name="ep_profilePicture_marginLeft">40dp</dimen>
+    <dimen name="ep_changePicture_TextSize">16sp</dimen>
+    <dimen name="ep_changePicture_marginLeft">40dp</dimen>
+    <dimen name="ep_changePicture_marginTop">120dp</dimen>
+
+    <dimen name="ep_generalInfoLabel_TextSize">13sp</dimen>
+    <dimen name="ep_generalInfoLabel_marginTop">280dp</dimen>
+    <dimen name="ep_generalInfoLabel_marginLeft">30dp</dimen>
+
+    <dimen name="ep_generalInfoBox_height">643.6dp</dimen>
+    <dimen name="ep_generalInfoBox_marginTop">320dp</dimen>
+    <dimen name="ep_generalInfoBox_topBorder">320dp</dimen>
+    <dimen name="ep_generalInfoBox_bottomBorder">963.6dp</dimen>
+    <dimen name="ep_textBox_Size">70dp</dimen>
+    <dimen name="ep_textBox_TextSize">14sp</dimen>
+    <dimen name="ep_textBox_MarginLeft">20dp</dimen>
+    <dimen name="ep_textBox_paddingLeft">10dp</dimen>
+    <dimen name="ep_textBox_SmallerIcon_paddingLeft">30dp</dimen>
+    <dimen name="ep_bioTextBox_height">230dp</dimen>
+    <dimen name="ep_iconSize">60dp</dimen>
+    <dimen name="ep_mediumIconSize">50dp</dimen>
+    <dimen name="ep_smallIconSize">40dp</dimen>
+
+    <dimen name="ep_usernameIcon_marginTop">325.6dp</dimen>
+    <dimen name="ep_usernameTextBox_marginTop">325.6dp</dimen>
+    <dimen name="ep_usernameBorder_marginTop">400.6dp</dimen>
+
+    <dimen name="ep_fullnameIcon_marginTop">406.2dp</dimen>
+    <dimen name="ep_fullnameTextbox_marginTop">406.2dp</dimen>
+    <dimen name="ep_fullnameBorder_marginTop">481.2dp</dimen>
+
+    <dimen name="ep_genderIcon_marginTop">486.8dp</dimen>
+    <dimen name="ep_genderTextBox_marginTop">486.8dp</dimen>
+    <dimen name="ep_genderBorder_marginTop">561.8dp</dimen>
+
+    <dimen name="ep_addressIcon_marginTop">577.4dp</dimen>
+    <dimen name="ep_addressTextBox_marginTop">567.4dp</dimen>
+    <dimen name="ep_addressBorder_marginTop">642.4dp</dimen>
+
+    <dimen name="ep_bioTextBox_marginTop">648dp</dimen>
+    <dimen name="ep_bioBorder_marginTop">883dp</dimen>
+
+    <dimen name="ep_websiteIcon_marginTop">888.6dp</dimen>
+    <dimen name="ep_websiteTextBox_marginTop">888.6dp</dimen>
+    <dimen name="ep_websiteBorder_marginTop">963.6dp</dimen>
+
+    <dimen name="ep_privateInfoLabel_textSize">13sp</dimen>
+    <dimen name="ep_privateInfoLabel_marginLeft">30dp</dimen>
+    <dimen name="ep_privateInfoLabel_marginTop">1020dp</dimen>
+
+    <dimen name="ep_privateBox_height">241.8dp</dimen>
+    <dimen name="ep_privateBox_marginTop">1060dp</dimen>
+    <dimen name="ep_privateBox_TopBorder">1060dp</dimen>
+    <dimen name="ep_privateBox_BottomBorder">1301.8dp</dimen>
+
+    <dimen name="ep_emailIcon_marginTop">1070.6dp</dimen>
+    <dimen name="ep_emailTextBox_marginTop">1065.6dp</dimen>
+    <dimen name="ep_emailBorder_marginTop">1140.6dp</dimen>
+
+    <dimen name="ep_phoneIcon_marginTop">1151.2dp</dimen>
+    <dimen name="ep_phoneTextBox_marginTop">1146.2dp</dimen>
+    <dimen name="ep_phoneBorder_marginTop">1220.6dp</dimen>
+
+    <dimen name="ep_birthdayIcon_marginTop">1231.8dp</dimen>
+    <dimen name="ep_birthdayTextBox_marginTop">1226.8dp</dimen>
+    <dimen name="ep_birthdayBorder_marginTop">1301.8dp</dimen>
+
+
+    //Products dimensions
+    <dimen name="image_size">120dp</dimen>
+    <dimen name="quantity_box_width">200dp</dimen>
+    <dimen name="quantity_box_height">100dp</dimen>
+    <dimen name="add_to_cart_btn_height">90dp</dimen>
+    <dimen name="checkout_btn_width">140dp</dimen>
+    <dimen name="checkout_btn_height">70dp</dimen>
+    <dimen name="cart_btn_size">80dp</dimen>
+    <dimen name="confirm_checkout_font_size">22sp</dimen>
+    <dimen name="confirm_checkout_details_font_size">18sp</dimen>
+
+
+
+</resources>

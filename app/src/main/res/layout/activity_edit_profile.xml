@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f3f6fb"
+    tools:context="com.lastmilesale.android.mobileapps.lastmile.Activities.Profile.EditProfile">
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/activity_edit_info_fab"
+        android:layout_width="0.1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_height="0.1dp"
+        android:layout_gravity="bottom|end"/>
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:id="@+id/edit_profile_appBarLayout">
+        <include
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            layout="@layout/edit_profile_toolbar"/>
+    </android.support.design.widget.AppBarLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/edit_profile_appBarLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ep_generalInfoLabel_marginTop"
+            android:textSize="15sp"
+            android:layout_marginLeft="@dimen/ep_generalInfoLabel_marginLeft"
+            android:text="General Information"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="sans-serif"
+            android:textColor="#696969"
+            android:layout_alignParentTop="true"
+            android:id="@+id/general_info_label" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_box"
+            android:layout_below="@id/general_info_label"
+            android:layout_marginTop="5dp"
+            android:id="@+id/taarifa_za">
+
+            <ImageView
+                android:layout_width="@dimen/ep_mediumIconSize"
+                android:layout_height="@dimen/ep_mediumIconSize"
+                android:src="@drawable/ic_name_icon"
+                android:id="@+id/ep_username_icon"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ep_textBox_Size"
+                android:background="#ffffff"
+                android:inputType="textNoSuggestions"
+                android:maxLines="1"
+                android:id="@+id/ep_emailEdit"
+                android:textColor="#333333"
+                android:hint="Full name"
+                android:textColorHint="#a1a1a1"
+                android:paddingLeft="@dimen/ep_textBox_paddingLeft"
+                android:textSize="@dimen/ep_textBox_TextSize"
+                android:layout_marginLeft="@dimen/ep_textBox_MarginLeft"
+                android:layout_toRightOf="@id/ep_username_icon"/>
+
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:layout_toRightOf="@id/ep_username_icon"
+                android:layout_below="@id/ep_emailEdit"
+                android:background="#eae8e8"
+                android:id="@+id/ep_username_line"/>
+
+
+            <ImageView
+                android:layout_width="@dimen/ep_mediumIconSize"
+                android:layout_height="@dimen/ep_mediumIconSize"
+                android:src="@drawable/ic_email"
+                android:layout_below="@id/ep_username_line"
+                android:id="@+id/ep_fullname_icon"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ep_textBox_Size"
+                android:background="#ffffff"
+                android:id="@+id/ep_fullnameEdit"
+                android:inputType="textNoSuggestions"
+                android:maxLines="1"
+                android:digits="0123456789qwertzuiopasdfghjklyxcvbnmABCDEFGHIJKLMNOPQRSTUVWXYZ _.,();:@#"
+                android:layout_below="@id/ep_username_line"
+                android:hint="Email"
+                android:layout_toRightOf="@id/ep_fullname_icon"
+                android:textColor="#333333"
+                android:textColorHint="#a1a1a1"
+                android:paddingLeft="@dimen/ep_textBox_paddingLeft"
+                android:textSize="@dimen/ep_textBox_TextSize"
+                android:layout_marginLeft="@dimen/ep_textBox_MarginLeft"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:background="#eae8e8"
+                android:layout_toRightOf="@id/ep_fullname_icon"
+                android:layout_below="@id/ep_fullnameEdit"
+                android:id="@+id/ep_fullname_line"/>
+
+            <ImageView
+                android:layout_width="@dimen/ep_mediumIconSize"
+                android:layout_height="@dimen/ep_mediumIconSize"
+                android:src="@drawable/ic_smartphone"
+                android:layout_below="@id/ep_fullname_line"
+                android:id="@+id/ep_gender_icon"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ep_textBox_Size"
+                android:background="#ffffff"
+                android:id="@+id/ep_genderSpinner"
+                android:textColor="#333333"
+                android:popupBackground="#ffffff"
+                android:layout_below="@id/ep_fullname_line"
+                android:layout_toRightOf="@id/ep_gender_icon"
+                android:hint="Phone number"
+                android:paddingLeft="@dimen/ep_textBox_paddingLeft"
+                android:textSize="@dimen/ep_textBox_TextSize"
+                android:layout_marginLeft="@dimen/ep_textBox_MarginLeft"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:background="#eae8e8"
+                android:layout_toRightOf="@id/ep_gender_icon"
+                android:layout_below="@id/ep_genderSpinner"
+                android:id="@+id/ep_gender_line"/>
+
+
+            <ImageView
+                android:layout_width="@dimen/ep_mediumIconSize"
+                android:layout_height="@dimen/ep_mediumIconSize"
+                android:src="@drawable/ic_location"
+                android:layout_below="@id/ep_gender_line"
+                android:id="@+id/ep_address_icon"/>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ep_textBox_Size"
+                android:background="#ffffff"
+                android:digits="0123456789qwertzuiopasdfghjklyxcvbnmABCDEFGHIJKLMNOPQRSTUVWXYZ _.,();:@#"
+                android:id="@+id/ep_addressEdit"
+                android:layout_below="@id/ep_gender_line"
+                android:hint="Location"
+                android:inputType="textNoSuggestions"
+                android:textColor="#333333"
+                android:layout_toRightOf="@id/ep_address_icon"
+                android:textColorHint="#a1a1a1"
+                android:textSize="@dimen/ep_textBox_TextSize"
+                android:paddingLeft="@dimen/ep_textBox_paddingLeft"
+                android:layout_marginLeft="@dimen/ep_textBox_MarginLeft"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:background="#eae8e8"
+                android:layout_below="@id/ep_addressEdit"
+                android:id="@+id/ep_address_line"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="230dp"
+            android:textSize="15sp"
+            android:layout_marginLeft="@dimen/ep_privateInfoLabel_marginLeft"
+            android:text="Additional information"
+            android:fontFamily="sans-serif"
+            android:textColor="#696969"
+            android:id="@+id/private_info_label"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/white_box"
+            android:layout_below="@+id/private_info_label"
+            android:id="@+id/private_info_layout">
+
+            <ImageView
+                android:layout_width="@dimen/ep_mediumIconSize"
+                android:layout_height="@dimen/ep_mediumIconSize"
+                android:layout_marginLeft="2dp"
+                android:src="@drawable/ic_shopping"
+                android:id="@+id/ep_email_icon"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ep_textBox_Size"
+                android:hint="Shop name"
+                android:inputType="textNoSuggestions"
+                android:layout_toRightOf="@id/ep_email_icon"
+                android:textColor="#333333"
+                android:background="#ffffff"
+                android:digits="0123456789qwertzuiopasdfghjklyxcvbnmABCDEFGHIJKLMNOPQRSTUVWXYZ _.,();:@#"
+                android:id="@+id/ep_ageEdit"
+                android:textColorHint="#a1a1a1"
+                android:paddingLeft="@dimen/ep_textBox_paddingLeft"
+                android:textSize="@dimen/ep_textBox_TextSize"
+                android:layout_marginLeft="@dimen/ep_textBox_MarginLeft"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:layout_toRightOf="@id/ep_email_icon"
+                android:layout_below="@id/ep_ageEdit"
+                android:background="#eae8e8"
+                android:id="@+id/ep_email_line" />
+
+            <ImageView
+                android:layout_width="@dimen/ep_mediumIconSize"
+                android:layout_height="@dimen/ep_mediumIconSize"
+                android:layout_marginLeft="2dp"
+                android:src="@drawable/ic_tin"
+                android:layout_below="@id/ep_email_line"
+                android:id="@+id/ep_phone_icon"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ep_textBox_Size"
+                android:layout_below="@id/ep_email_line"
+                android:hint="TIN Number"
+                android:inputType="textNoSuggestions"
+                android:layout_toRightOf="@id/ep_phone_icon"
+                android:textColor="#333333"
+                android:background="#ffffff"
+                android:digits="0123456789qwertzuiopasdfghjklyxcvbnmABCDEFGHIJKLMNOPQRSTUVWXYZ _.,();:@#"
+                android:id="@+id/ep_pregnancyAgeEdit"
+                android:textColorHint="#a1a1a1"
+                android:paddingLeft="@dimen/ep_textBox_paddingLeft"
+                android:textSize="@dimen/ep_textBox_TextSize"
+                android:layout_marginLeft="@dimen/ep_textBox_MarginLeft"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:layout_toRightOf="@id/ep_phone_icon"
+                android:layout_below="@id/ep_pregnancyAgeEdit"
+                android:background="#eae8e8"
+                android:id="@+id/ep_phone_line"/>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</RelativeLayout>

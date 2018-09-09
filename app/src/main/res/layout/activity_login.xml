@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/signin_layout"
+    android:fillViewport="true"
+    tools:context="com.lastmilesale.android.mobileapps.lastmile.Activities.Authentication.Login">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/signin_fab"
+            android:layout_width="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_height="1dp"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="0.01dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textSize="@dimen/signup_logo_size"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/colorLastMileOrange"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/signin_logo_marginTop"
+            android:id="@+id/signin_logo"/>
+
+
+
+        <EditText
+            android:layout_width="@dimen/signup_usernameEdit_Width"
+            android:layout_height="@dimen/signup_usernameEdit_Height"
+            android:background="@drawable/authentication_text_edit"
+            android:hint="Phone number"
+            android:maxLines="1"
+            android:textStyle="bold"
+            android:paddingLeft="5dp"
+            android:fontFamily="sans-serif"
+            android:textColorHint="#666666"
+            android:textSize="@dimen/signup_motto_textSize"
+            android:textColor="#444444"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/signin_logo"
+            android:layout_marginTop="@dimen/signin_textEdit_margintop"
+            android:id="@+id/signin_phoneEdit"
+            android:layout_marginLeft="@dimen/signup_signin_altenative_marginBottom"
+            android:layout_marginRight="@dimen/signup_signin_altenative_marginBottom"/>
+
+        <RelativeLayout
+            android:layout_width="@dimen/signup_usernameEdit_Width"
+            android:layout_height="@dimen/signup_usernameEdit_Height"
+            android:background="@drawable/authentication_text_edit"
+            android:layout_below="@id/signin_phoneEdit"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/signin_textEdit_margintop"
+            android:id="@+id/signin_password_layout"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_marginLeft="@dimen/signup_signin_altenative_marginBottom"
+            android:layout_marginRight="@dimen/signup_signin_altenative_marginBottom">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_visibility"
+                android:id="@+id/signin_visibility"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:visibility="visible"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_visibility_off"
+                android:id="@+id/signin_visibility_off"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:visibility="invisible"/>
+            <EditText
+                android:layout_width="@dimen/signup_usernameEdit_Width"
+                android:layout_height="@dimen/signup_usernameEdit_Height"
+                android:background="#e4e4e4"
+                android:hint="Password"
+                android:maxLines="1"
+                android:fontFamily="sans-serif"
+                android:textColor="#444444"
+                android:textStyle="bold"
+                android:textColorHint="#666666"
+                android:textSize="@dimen/signup_motto_textSize"
+                android:layout_toLeftOf="@id/signin_visibility"
+                android:paddingLeft="5dp"
+                android:id="@+id/signin_passwordEdit"
+                android:inputType="textPassword" />
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="@dimen/signup_usernameEdit_Width"
+            android:layout_height="@dimen/signup_usernameEdit_Height"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/signin_password_layout"
+            android:layout_marginTop="@dimen/signin_textEdit_margintop"
+            android:background="@drawable/authentication_inactive_button"
+            android:text="Login"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif"
+            android:textColor="#aaaaaa"
+            android:textAllCaps="false"
+            android:textSize="@dimen/signup_motto_textSize"
+            android:id="@+id/signin_btn_inactive"
+            android:stateListAnimator="@null"
+            android:layout_marginLeft="@dimen/signup_signin_altenative_marginBottom"
+            android:layout_marginRight="@dimen/signup_signin_altenative_marginBottom"/>
+
+        <Button
+            android:layout_width="@dimen/signup_usernameEdit_Width"
+            android:layout_height="@dimen/signup_usernameEdit_Height"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/signin_password_layout"
+            android:layout_marginTop="@dimen/signin_textEdit_margintop"
+            android:background="@drawable/authentication_button"
+            android:text="Login"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/colorWhite"
+            android:textAllCaps="false"
+            android:textSize="@dimen/signup_motto_textSize"
+            android:id="@+id/signin_btn"
+            android:layout_marginLeft="@dimen/signup_signin_altenative_marginBottom"
+            android:layout_marginRight="@dimen/signup_signin_altenative_marginBottom"
+            android:visibility="invisible"/>
+
+        <Button
+            android:layout_width="@dimen/signup_usernameEdit_Width"
+            android:layout_height="@dimen/signup_usernameEdit_Height"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/signin_password_layout"
+            android:background="@drawable/authentication_loading_button"
+            android:layout_marginTop="@dimen/signin_textEdit_margintop"
+            android:text="Loading..."
+            android:fontFamily="sans-serif"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAllCaps="false"
+            android:textSize="@dimen/signup_motto_textSize"
+            android:id="@+id/signin_loading_btn"
+            android:visibility="invisible"
+            android:layout_marginLeft="@dimen/signup_signin_altenative_marginBottom"
+            android:layout_marginRight="@dimen/signup_signin_altenative_marginBottom"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Learn more about Lastmile"
+            android:layout_centerHorizontal="true"
+            android:textColor="#666666"
+            android:fontFamily="sans-serif"
+            android:layout_below="@id/signin_loading_btn"
+            android:layout_marginTop="@dimen/signup_signin_altenative_marginBottom"
+            android:textSize="@dimen/signup_motto_textSize"
+            android:id="@+id/signin_forgotPasswd_btn"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account? Sign up"
+            android:textStyle="bold"
+            android:textSize="@dimen/signup_motto_textSize"
+            android:fontFamily="sans-serif"
+            android:textColor="#444444"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/signup_signin_altenative_marginBottom"
+            android:id="@+id/signin_signup_btn"/>
+
+    </RelativeLayout>
+
+</ScrollView>

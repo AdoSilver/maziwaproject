@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:id="@+id/main_timed_bottom_sheet_layout"
+    android:clipToPadding="true"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/product_image"
+            android:layout_width="@dimen/ep_profilePicture_Size"
+            android:layout_height="@dimen/ep_profilePicture_Size"
+            android:layout_marginTop="@dimen/ep_textBox_MarginLeft"
+            android:src="#e4e4e4"
+            app:civ_border_width="0.2dp"
+            app:civ_border_color="#d0d3d5"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product name"
+            android:id="@+id/product_name"
+            android:textColor="#444444"
+            android:textSize="@dimen/signup_motto_textSize"
+            android:textStyle="bold"
+            android:padding="@dimen/ep_textBox_paddingLeft"
+            android:fontFamily="sans-serif"
+            android:layout_toRightOf="@id/product_image"
+            android:layout_alignTop="@id/product_image"
+            android:layout_marginLeft="@dimen/signup_label_marginTop"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price"
+            android:fontFamily="sans-serif"
+            android:layout_below="@id/product_name"
+            android:layout_marginRight="@dimen/ep_textBox_paddingLeft"
+            android:id="@+id/product_price"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/signup_textEdit_textSize"
+            android:textStyle="bold"
+            android:padding="@dimen/ep_textBox_paddingLeft"
+            android:background="@drawable/price_box"
+            android:layout_toRightOf="@id/product_image"
+            android:layout_marginLeft="@dimen/ep_textBox_MarginLeft" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Details"
+            android:layout_below="@id/product_price"
+            android:padding="@dimen/ep_textBox_paddingLeft"
+            android:id="@+id/product_content"
+            android:textColor="#acacad"
+            android:fontFamily="sans-serif"
+            android:textSize="@dimen/signup_motto_textSize"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/product_image"
+            android:layout_marginLeft="@dimen/signup_label_marginTop" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Specify quantity to order"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/ep_textBox_paddingLeft"
+            android:fontFamily="sans-serif"
+            android:textSize="@dimen/signup_motto_textSize"
+            android:textColor="#444444"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/product_image"
+            android:layout_marginTop="@dimen/signup_usernameEdit_Height"
+            android:id="@+id/no_of_pieces_ordered"
+            android:visibility="visible"/>
+
+        <EditText
+            android:layout_width="@dimen/quantity_box_width"
+            android:layout_height="@dimen/quantity_box_height"
+            android:background="@drawable/authentication_text_edit"
+            android:hint="No of pieces"
+            android:maxLines="1"
+            android:paddingLeft="5dp"
+            android:fontFamily="sans-serif"
+            android:textColorHint="#999999"
+            android:inputType="number"
+            android:textSize="@dimen/signup_textEdit_textSize"
+            android:textColor="#444444"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/no_of_pieces_ordered"
+            android:layout_marginTop="@dimen/ep_textBox_MarginLeft"
+            android:id="@+id/no_of_pieces"
+            android:visibility="visible"/>
+
+        <EditText
+            android:layout_width="@dimen/quantity_box_width"
+            android:layout_height="@dimen/quantity_box_height"
+            android:background="@drawable/authentication_text_edit"
+            android:hint="No of dozens"
+            android:maxLines="1"
+            android:paddingLeft="5dp"
+            android:fontFamily="sans-serif"
+            android:textColorHint="#999999"
+            android:textSize="@dimen/signup_textEdit_textSize"
+            android:inputType="number"
+            android:textColor="#444444"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/no_of_pieces_ordered"
+            android:layout_marginTop="@dimen/ep_textBox_MarginLeft"
+            android:id="@+id/no_of_dozens"
+            android:visibility="visible"/>
+
+        <EditText
+            android:layout_width="@dimen/quantity_box_width"
+            android:layout_height="@dimen/quantity_box_height"
+            android:background="@drawable/authentication_text_edit"
+            android:hint="No of cartons"
+            android:maxLines="1"
+            android:paddingLeft="5dp"
+            android:fontFamily="sans-serif"
+            android:textColorHint="#999999"
+            android:textSize="@dimen/signup_textEdit_textSize"
+            android:inputType="number"
+            android:textColor="#444444"
+           android:layout_alignParentRight="true"
+            android:layout_below="@id/no_of_pieces_ordered"
+            android:layout_marginTop="@dimen/ep_textBox_MarginLeft"
+            android:id="@+id/no_of_cartons"
+            android:visibility="visible"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/no_of_pieces">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/add_to_cart_btn_height"
+                android:textColor="#ffffff"
+                android:text="Add to cart"
+                android:layout_alignParentRight="true"
+                android:id="@+id/add_to_cart_btn"
+                android:textAllCaps="false"
+                android:textSize="@dimen/signup_textEdit_textSize"
+                android:background="@color/colorLastMileRed"/>
+        </RelativeLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/products_activity_layout"
+    android:background="#f3f6fb"
+    tools:context="com.lastmilesale.android.mobileapps.lastmile.Activities.Main.ProductsActivity">
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/products_fab"
+        android:layout_width="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_height="1dp"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="0.01dp"/>
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        android:background="#f3f6fb"
+        android:id="@+id/products_appBarLayout"
+        android:stateListAnimator="@null">
+        <include
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:theme="@style/AppTheme.AppBarOverlay"
+            layout="@layout/products_toolbar"/>
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/products_appBarLayout"
+        android:layout_marginTop="5dp"
+        android:paddingTop="5dp"
+        android:background="#f3f6fb"
+        android:id="@+id/products_layout">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Products available"
+            android:fontFamily="sans-serif"
+            android:textColor="#444444"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:padding="10dp"
+            android:textSize="15sp"
+            android:id="@+id/products_label"/>
+        <android.support.v4.widget.SwipeRefreshLayout
+            app:theme="@style/SearchEditTextTheme"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/products_label"
+            android:id="@+id/products_swipe_refresh_layout">
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:id="@+id/products_recycler_view">
+            </android.support.v7.widget.RecyclerView>
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/products_appBarLayout"
+        android:background="#f3f6fb"
+        android:id="@+id/no_products_layout"
+        android:visibility="invisible">
+        <ImageView
+            android:layout_width="@dimen/ep_profile_pic_size"
+            android:layout_height="@dimen/ep_profile_pic_size"
+            android:src="@drawable/lastmile_logo_fainted"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/splash_logo_marginTop"
+            android:id="@+id/home_no_events_icon"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_products"
+            android:textColor="#b9bcc1"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif"
+            android:layout_below="@id/home_no_events_icon"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/no_products_refresh"
+            android:textSize="15sp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

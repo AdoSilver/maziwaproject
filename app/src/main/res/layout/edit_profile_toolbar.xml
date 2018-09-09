@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/general_toolbar_height"
+    android:background="@color/colorPrimaryDark"
+    android:minHeight="?attr/actionBarSize"
+    android:fitsSystemWindows="true"
+    android:id="@+id/edit_profile_toolbar"
+    app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="@dimen/signup_label_marginTop"
+            android:paddingTop="@dimen/signup_label_marginTop"
+            android:paddingBottom="@dimen/signup_label_marginTop"
+            android:src="@drawable/ic_arrow_white"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/edit_profile_toolbar_back_btn"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit profile"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/general_tab_text_size"
+            android:textStyle="bold"
+            android:id="@+id/edit_profile_toolbar_title"
+            android:layout_toRightOf="@id/edit_profile_toolbar_back_btn"
+            android:layout_centerVertical="true"/>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_forward"
+            android:paddingLeft="@dimen/checkout_btn_height"
+            android:paddingTop="@dimen/signup_label_marginTop"
+            android:paddingBottom="@dimen/signup_label_marginTop"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:id="@+id/edit_profile_toolbar_save_btn"/>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.Toolbar>

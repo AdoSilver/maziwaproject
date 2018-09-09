@@ -1,0 +1,151 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lastmilesale.android.mobileapps.lastmile.Activities.Main.AddToCartFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/product_image"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="10dp"
+            android:src="#e4e4e4"
+            app:civ_border_width="0.2dp"
+            app:civ_border_color="#d0d3d5"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product name"
+            android:id="@+id/product_name"
+            android:textColor="#091014"
+            android:textSize="@dimen/signup_label_textsize"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/product_image"
+            android:layout_marginLeft="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Details"
+            android:layout_below="@id/product_name"
+            android:id="@+id/product_content"
+            android:textColor="#acacad"
+            android:fontFamily="sans-serif"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            android:textStyle="normal"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp" />
+
+        <EditText
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:background="@drawable/authentication_text_edit"
+            android:hint="No of pieces"
+            android:maxLines="1"
+            android:paddingLeft="5dp"
+            android:fontFamily="sans-serif"
+            android:textColorHint="#999999"
+            android:textSize="15sp"
+            android:textColor="#444444"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/product_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/no_of_pieces"
+            android:visibility="visible"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quantity ordered"
+            android:maxLines="1"
+            android:paddingLeft="5dp"
+            android:fontFamily="sans-serif"
+            android:textSize="15sp"
+            android:textColor="#444444"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/product_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/no_of_pieces_ordered"
+            android:visibility="invisible"/>
+
+
+        <ImageView
+            android:layout_width="0.3dp"
+            android:layout_height="45dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/add_to_cart_separator"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:paddingTop="40dp"
+            android:paddingBottom="20dp"
+            android:layout_below="@id/no_of_pieces">
+
+        <Button
+            android:layout_width="90dp"
+            android:layout_height="45dp"
+            android:textColor="#ffffff"
+            android:text="Cancel"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/add_to_cart_cancel_btn"
+            android:textAllCaps="false"
+            android:layout_marginLeft="20dp"
+            android:textSize="@dimen/signup_textEdit_textSize"
+            android:background="@drawable/view_btn_layout"/>
+        <Button
+            android:layout_width="90dp"
+            android:layout_height="45dp"
+            android:layout_marginRight="20dp"
+            android:textColor="#ffffff"
+            android:text="Add to cart"
+            android:layout_alignParentRight="true"
+            android:id="@+id/add_to_cart_btn"
+            android:textAllCaps="false"
+            android:textSize="@dimen/signup_textEdit_textSize"
+            android:background="@drawable/cart_btn_layout"/>
+
+        <Button
+            android:layout_width="90dp"
+            android:layout_height="45dp"
+            android:textColor="#ffffff"
+            android:text="Done"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/add_to_cart_done_btn"
+            android:textAllCaps="false"
+            android:textSize="@dimen/signup_textEdit_textSize"
+            android:background="@drawable/view_btn_layout"
+            android:visibility="invisible"
+            android:layout_marginLeft="20dp"/>
+        <Button
+            android:layout_width="90dp"
+            android:layout_height="45dp"
+            android:textColor="#ffffff"
+            android:text="Go to cart"
+            android:layout_alignParentRight="true"
+            android:id="@+id/go_to_cart_btn"
+            android:textAllCaps="false"
+            android:textSize="@dimen/signup_textEdit_textSize"
+            android:background="@drawable/cart_btn_layout"
+            android:visibility="invisible"
+            android:layout_marginRight="20dp"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

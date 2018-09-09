@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="2dp"
+    android:paddingRight="2dp"
+    android:background="@drawable/white_box">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_box"
+        android:paddingTop="10dp"
+        android:paddingLeft="5dp"
+        android:paddingBottom="10dp"
+        android:id="@+id/psr_childRelativeLayout">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/supplier_image"
+            android:layout_width="@dimen/image_size"
+            android:layout_height="@dimen/image_size"
+            android:src="#e4e4e4"
+            app:civ_border_width="0.2dp"
+            app:civ_border_color="#d0d3d5"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true"/>
+
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/view_btn_layout"
+            android:text="View"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/supplier_view_btn"/>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Suppliers name"
+            android:layout_marginRight="5dp"
+            android:id="@+id/supplier_name"
+            android:textColor="#444444"
+            android:fontFamily="sans-serif"
+            android:textSize="@dimen/signup_textEdit_textSize"
+            android:layout_alignTop="@id/supplier_image"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/supplier_image"
+            android:layout_marginLeft="5dp"
+            android:layout_toLeftOf="@id/supplier_view_btn"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Details"
+            android:layout_below="@id/supplier_name"
+            android:layout_marginRight="5dp"
+            android:id="@+id/suppliers_details"
+            android:textColor="#acacad"
+            android:textSize="@dimen/signup_textEdit_textSize"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/supplier_image"
+            android:layout_marginLeft="5dp"
+            android:layout_toLeftOf="@id/supplier_view_btn"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

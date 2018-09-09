@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/general_toolbar_height"
+    android:background="@color/colorPrimaryDark"
+    android:minHeight="?attr/actionBarSize"
+    android:fitsSystemWindows="true"
+    android:id="@+id/suppliers_toolbar"
+    app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_menu"
+            android:paddingRight="@dimen/checkout_btn_height"
+            android:paddingTop="@dimen/signup_label_marginTop"
+            android:paddingBottom="@dimen/signup_label_marginTop"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/main_drawer_menu_btn"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Last Mile"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/toolbar_title_text_size"
+            android:textStyle="bold"
+            android:id="@+id/rp_toolbar_title"
+            android:layout_centerVertical="true"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/signup_label_marginTop"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/checkout_btn_height"
+                android:paddingTop="@dimen/signup_label_marginTop"
+                android:paddingBottom="@dimen/signup_label_marginTop"
+                android:src="@drawable/ic_shopping_cart_white"
+                android:id="@+id/products_cart_btn" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/badge_shape"
+                android:layout_toRightOf="@id/products_cart_btn"
+                android:text="0"
+                android:layout_marginLeft="@dimen/n_badge_marginLeft"
+                android:textSize="@dimen/n_badge_textSize"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:id="@+id/m_sc_badge"
+                android:visibility="visible"/>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.Toolbar>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#076288</color>
+    <color name="colorPrimaryDark">#065170</color>
+    <color name="colorAccent">#f8981d</color>
+    <color name="colorLastMileBlue">#1284b3</color>
+    <color name="colorLastMileOrange">#ff9450</color>
+    <color name="colorLastMileRed">#ef3e36</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorLastMileYellow">#fbbc3b</color>
+</resources>

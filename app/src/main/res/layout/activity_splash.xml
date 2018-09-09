@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context="com.lastmilesale.android.mobileapps.lastmile.Activities.GetStarted.SplashActivity">
+
+    <ImageView
+        android:layout_width="@dimen/splash_logo_size"
+        android:layout_height="@dimen/splash_logo_size"
+        android:src="@drawable/lastmile_logo_vector"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/splash_logo_marginTop"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Copyright \u00a9 2018 Last Mile Solutions"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/splash_copyrights_text_size"
+        android:padding="5dp"
+        android:textColor="#444444"
+        android:id="@+id/getStarted_terms_policy"/>
+
+</RelativeLayout>
